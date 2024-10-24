@@ -22,3 +22,12 @@ FROM
 WHERE type2 IS NULL
 GROUP BY type1
 ORDER BY cnt DESC
+
+
+-- 3. type2 상관없이 tpye1의 포켓몬 수를 알수있는 쿼리.
+SELECT
+  type1
+  , COUNT(type1) AS pokemon_cnt
+FROM
+  basic.pokemon
+GROUP BY type1
