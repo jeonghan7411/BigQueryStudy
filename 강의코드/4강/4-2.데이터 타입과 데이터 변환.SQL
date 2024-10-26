@@ -1,0 +1,24 @@
+-- 문자열 붙이기  ==>  CONCAT
+SELECT
+  concat('안녕','하세요') as result;
+
+-- 문자열 분리하기 ==> SPLIT
+SELECT
+  SPLIT("가, 나, 다, 라",", ") AS result;
+
+-- 특정 단어 수정하기 ==> REPLACE
+SELECT
+  REPLACE("안녕하세요", "안녕", "실천");
+  -- REPLACE(원본,찾을 단어, 바꿀 단어)
+
+
+-- 문자열 자르기 ==>  TRIM
+SELECT
+  TRIM("안녕하세요", "하세요");
+  -- TRIM(문자열 원본, 자를 단어)
+
+-- 영어 소문자를 대문자로 변경 => UPPER
+SELECT
+  UPPER("abc");
+
+-- 
